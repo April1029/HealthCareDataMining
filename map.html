@@ -1,0 +1,116 @@
+<!doctype html>
+<!-- Head -->
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap core CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+\  <!-- Custom styles for this template -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+  <link href="./css/mystyle.css" rel="stylesheet">
+   <!-- Add Google Fonts support -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <!--  Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+  <!-- Mapbox-->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+
+  <title>Healthcare Data Mining</title>
+  <link rel="icon" type="image/png" href="img/icon.png">
+</head>
+
+
+
+
+  <!-- HEADER --> 
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top hideNavbar">
+          <!-- Logo -->
+          <a class="navbar-brand" id="logo" href="index.html">Healthcare Data Mining</a>
+          <!-- Nav-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+
+              <li class="nav-item ">
+                <a class="nav-link" href="intro.html">What is happening on the table?</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="map.html">Map</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="casestudy.html">Case Study</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </nav>
+  </header>
+    
+<body>
+
+  <!-- The map will be added to this div by javascript --> 
+  <div id="map-parent">
+    <div id="map"></div>
+  </div>
+
+  <!-- Map overlay sidebar -->
+    <div id='map-sidebar'>
+      <!-- Layers control (populated by javascript code) -->
+      <div id='layers-control'>
+<!--        <h3>Show/Hide Layers:</h3>-->
+      </div>
+    </div>
+</body>
+
+  <!-- Map sidebar --> 
+  <div id="sidebar">
+    <div>
+      <h1 class='page-title'>Health Data Mining</h1>
+      <!-- About this map button -->
+      <!-- Info window (populated by javascript code from the Mapbox map layers) -->
+      <div id='info-window'>
+        <p>Global Scale<br>Through all the processes of data gathering, storage and management, many different equipment and materials are needed to convert the bio-samples into virtual data. Due to the rapid growing demand on health data monitoring and genetic data analysis, many companies from all over the world are now providing equipment for the US market that is used in different steps.
+</p>
+      </div>
+      <!-- Scrolling chapters (populated by javascript code from the Mapbox map layers) -->
+      <div id="chapters" onmouseover="this.style.overflow='scroll'"
+onmouseout="this.style.overflow='hidden'" >
+        
+        </div>
+    </div>
+  </div>
+
+
+
+
+    <!-- FOOTER --> 
+<!--
+        <footer class="footer">
+          <p>© 2020 DigitalFUTURES</p>
+        </footer>
+-->
+<!--      </main>-->
+
+
+   
+
+
+
+    <!-- Link to our custom javascript, must be placed at the end of the index.html file -->  
+    <script src="./js/jquery-3.2.1.slim.min.js" ></script>
+     <script src="./js/popper.min.js"></script>
+     <script src="./js/bootstrap.min.js"></script>
+     <script src="./js/mymap.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+</html>
